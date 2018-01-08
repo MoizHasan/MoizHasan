@@ -30,6 +30,7 @@ const StyledLink = styled(Link)`
 
   @media (max-width: 700px) {
     width: 95%;
+    padding: .85rem 0;
   }
   `;
 
