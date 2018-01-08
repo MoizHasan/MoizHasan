@@ -35,16 +35,16 @@ return (
   <div className='leftPanel' style = {leftPanel} >
     <h1>About Me</h1>
     <img src={avatar} alt="avatar" width="300px" marginBottom="0" />
-    <a href='./Hasan_Resume.pdf' style = {resumeLink} >Download Resume</a>
+    <a href='./Hasan_Resume.pdf' target="_blank" style = {resumeLink} >Download Resume</a>
   </div>
  <div className='rightPanel' style = {rightPanel} >
-<p>I am a full stack developer currently looking for my next challenge.
+<p>I am a Full Stack Developer currently looking for my next challenge.
  As a developer, I have a year and a half of experience working with the LAMP stack. 
  I graduated from The University of St. Thomas with a degree in Computer Science in 2015.
  </p>
  <p>
  Shortly after graduating I decided to pursue web development and expanding my knowledge. 
- I enjoy going to local developer meetups and learning more about current technologies.
+ I enjoy attending local developer meetups and learning more about current technologies.
  </p>
  <p> 
  When not in front of a computer I enjoy going to concerts, playing tennis and boardgames.

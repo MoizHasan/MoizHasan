@@ -8,7 +8,7 @@ const pageStyle = {
 const IndexPage = () => (
   <div style={pageStyle}>
     <h1>Hello I'm Moiz Hasan.</h1>
-    <h4>I'm a FullStack Web Developer who enjoys learning about new tech.</h4>
+    <h4>I'm a Full Stack Web Developer who enjoys learning about new tech.</h4>
   </div>
 )
 

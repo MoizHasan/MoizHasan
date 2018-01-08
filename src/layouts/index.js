@@ -23,6 +23,16 @@ const StyledLink = styled(Link)`
   }
   `;
 
+  const StyledNav = styled.nav`
+  margin: 0 auto;
+  width: 90%;
+  padding: .85rem 1.25rem;
+
+  @media (max-width: 700px) {
+    width: 95%;
+  }
+  `;
+
 const Header = () => (
   <div
     style={{
@@ -31,13 +41,7 @@ const Header = () => (
       width: '100%'
     }}
   >
-    <div
-      style={{
-        margin: '0 auto',
-        width: '90%',
-        padding: '.85rem 1.25rem',
-      }}
-    >
+    <StyledNav>
       <div style={{ margin: 0 }}>
         <Link
           style={LinkStyle}
@@ -66,7 +70,7 @@ const Header = () => (
           </StyledLink> 
           </section>
       </div>
-    </div>
+    </StyledNav>
   </div>
 )
 
