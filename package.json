@@ -4,11 +4,13 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.145",
-    "gatsby-link": "^1.6.32",
+    "gatsby": "^2.0.50",
+    "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-styled-components": "^2.0.4",
-    "styled-components": "^2.4.0"
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "styled-components": "^2.4.1"
   },
   "keywords": [
     "gatsby"
@@ -22,6 +24,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.9.2"
+    "prettier": "^1.15.2"
   }
 }
