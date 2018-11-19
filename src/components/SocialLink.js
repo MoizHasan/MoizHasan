@@ -1,5 +1,5 @@
 import React from 'react'
-import GatsbyLink from 'gatsby-link'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -14,7 +14,7 @@ class SocialLink extends React.Component {
 		const { href, imgSrc } = this.props;
 
 		return (
-			<a href = {href}  target="_blank">
+			<a href = {href}  target="_blank" rel="noopener noreferrer">
 			    <img src = {imgSrc} style = {iconStyle} ></img>
 			</a>
 			);

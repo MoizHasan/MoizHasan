@@ -1,5 +1,5 @@
 import React from 'react'
-import GatsbyLink from 'gatsby-link'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
 const linkStyle = {
@@ -15,7 +15,7 @@ class ExternalLink extends React.Component {
 		const { href, value } = this.props;
 
 		return (
-			<a href = {href}  target="_blank" style = {linkStyle} >
+			<a href = {href}  target="_blank" rel="noopener noreferrer" style = {linkStyle} >
 			    {value}
 			</a>
 			);

@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-import './index.css'
+import '../layouts/index.css'
 
 const LinkStyle = { color: 'white', 
                     textDecoration: 'none',

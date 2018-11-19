@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import avatar from './avatar.jpg'
 
 const leftPanel = {
@@ -34,7 +34,7 @@ return (
 <div>
   <div className='leftPanel' style = {leftPanel} >
     <h1>About Me</h1>
-    <img src={avatar} alt="avatar" width="300px" marginBottom="0" />
+    <img src={avatar} alt="avatar" width="300px" />
     <a href='./Hasan_Resume.pdf' target="_blank" style = {resumeLink} >Download Resume</a>
   </div>
  <div className='rightPanel' style = {rightPanel} >

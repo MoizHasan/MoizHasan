@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import ProjectItem from '../components/ProjectItem'
 
 class ProjectList extends React.Component {
