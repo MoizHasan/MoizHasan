@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import ProjectItem from '../components/ProjectItem'
 
 class ProjectList extends React.Component {
@@ -11,7 +10,7 @@ class ProjectList extends React.Component {
 
         {projects.map((project) => (
           
-            <ProjectItem key={project.title} title={project.title} description={project.description} href={project.href} />
+            <ProjectItem key={project.title} title={project.title} description={project.description} href={project.href} demo={project.demo}/>
           ))}
 
       </div>

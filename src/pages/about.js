@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import avatar from './avatar.jpg'
+import Layout from "../components/layout"
 
 const leftPanel = {
 	float: 'left',
@@ -32,6 +32,7 @@ render() {
 
 return (
 <div>
+<Layout>
   <div className='leftPanel' style = {leftPanel} >
     <h1>About Me</h1>
     <img src={avatar} alt="avatar" width="300px" />
@@ -50,6 +51,7 @@ return (
  When not in front of a computer I enjoy going to concerts, playing tennis and boardgames.
  </p>
  </div>
+ </Layout>
 </div>
 );
 }

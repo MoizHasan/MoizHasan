@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
+import ExternalLink from '../components/ExternalLink'
 
 import '../layouts/index.css'
 
@@ -11,12 +12,20 @@ const LinkStyle = { color: 'white',
                     fontSize: '.85rem',
                     fontWeight: 'lighter',
                     textTransform: 'uppercase',
-                  fontFamily: 'Helvetica, Arial, sans-serif',
+                    fontFamily: 'Helvetica, Arial, sans-serif',
+                    margin: '0.5rem 0.75rem',
                     }
 
 const StyledLink = styled(Link)`
   ${LinkStyle}
-  margin: 0.5rem 0.75rem;
+
+  &:hover {
+    color: #de525a;
+  }
+  `;
+
+  const StyledExternalLink = styled(ExternalLink)`
+  ${LinkStyle}
 
   &:hover {
     color: #de525a;
@@ -34,6 +43,7 @@ const StyledLink = styled(Link)`
   }
   `;
 
+
 const Header = () => (
   <div
     style={{
@@ -44,13 +54,11 @@ const Header = () => (
   >
     <StyledNav>
       <div style={{ margin: 0 }}>
-        <Link
-          style={LinkStyle}
+        <StyledLink
           to="/"
-        >
+          >
           Moiz Hasan
-        </Link>
-        
+        </StyledLink>
         <section style={{ float: 'right' }}>
         <StyledLink
           to="about"
@@ -64,16 +72,15 @@ const Header = () => (
           Projects
           </StyledLink> 
           
-          <StyledLink
-          to="contact"
-          >
-          Contact
-          </StyledLink> 
+          <StyledExternalLink href='mailto:moizhasan51@gmail.com' value="Email" />
+          <StyledExternalLink href='https://www.linkedin.com/in/moizhasan/' value="linkedin" />
+          <StyledExternalLink href='https://github.com/MoizHasan' value="github" />
           </section>
       </div>
     </StyledNav>
   </div>
 )
+
 
 const TemplateWrapper = ({ children }) => (
   <div>

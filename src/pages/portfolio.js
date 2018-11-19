@@ -1,8 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Layout from "../components/layout"
 import ProjectList from '../components/ProjectList'
 
 const projects = [   
+
+  {
+    title: "Random Quote Machine",
+    description: "Random Quote Generator built with React and the Wiki Media API",
+    href: 'https://github.com/MoizHasan/minesweeper',
+    demo: "portfolio/randomquotegenerator",
+  },
 
   {
   	title: "Mine Sweeper",
@@ -29,10 +36,12 @@ export default class Portfolio extends React.Component {
 render() {
 
 return (
+  <Layout>
 	<div>
 	<h1>Projects</h1>
 	<ProjectList projects={projects} />
-</div>
+  </div>
+  </Layout>
 	);
 }
 }
