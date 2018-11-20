@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from '../../components/layout.js'
+import styles from './random-quote-generator.module.css'
+import { FaTwitter } from 'react-icons/fa'
 /*
  * Random Quote Generation with React
  */
-export default class QuoteBox extends React.Component {
+class QuoteBox extends React.Component {
   constructor(props) {
         super(props);
         
@@ -69,16 +71,22 @@ export default class QuoteBox extends React.Component {
   
   render() {
     return (
-    <div id="quote-box" style = {{backgroundColor: this.state.backgroundColor}}>
-      <h2 id="text">"{this.state.quote}"</h2>
-            <p id="author">-{this.state.author}</p>
+    <Layout>
+    <div id="quote-box" className={styles.quoteBox} style = {{backgroundColor: this.state.backgroundColor}}>
+      <h2 id="text" className={styles.text}>"{this.state.quote}"</h2>
+            <p id="author" className={styles.author}>-{this.state.author}</p>
       <div>
-        <button id="new-quote" onClick={ this.setQuote }>
+        <button id="new-quote" className={styles.newQuote} onClick={ this.setQuote }>
 				      New Quote
 			      </button>
-        <a id="tweet-quote" href={"https://twitter.com/intent/tweet?text=" + '"' + this.state.quote + '"  - ' + this.state.author} target="_blank" rel="noopener noreferrer">Tweet Quote</a>.
+        <a style={{marginLeft:'20px', textDecoration:'none'}} id="tweet-quote" href={"https://twitter.com/intent/tweet?text=" 
+        + '"' + this.state.quote + '"  - ' + this.state.author} target="_blank" rel="noopener noreferrer">
+            <FaTwitter/>Share on Twitter</a>
       </div>
     </div>
+    </Layout>
     )
   }
 }
+
+export default QuoteBox;

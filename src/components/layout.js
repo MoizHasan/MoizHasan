@@ -4,6 +4,9 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import ExternalLink from '../components/ExternalLink'
+import { FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+import { GoMarkGithub } from 'react-icons/go'
 
 import '../layouts/index.css'
 
@@ -26,7 +29,6 @@ const StyledLink = styled(Link)`
 
   const StyledExternalLink = styled(ExternalLink)`
   ${LinkStyle}
-
   &:hover {
     color: #de525a;
   }
@@ -42,7 +44,6 @@ const StyledLink = styled(Link)`
     padding: .85rem 0;
   }
   `;
-
 
 const Header = () => (
   <div
@@ -72,9 +73,9 @@ const Header = () => (
           Projects
           </StyledLink> 
           
-          <StyledExternalLink href='mailto:moizhasan51@gmail.com' value="Email" />
-          <StyledExternalLink href='https://www.linkedin.com/in/moizhasan/' value="linkedin" />
-          <StyledExternalLink href='https://github.com/MoizHasan' value="github" />
+          <StyledExternalLink style={{fontSize: '1rem'}} href='mailto:moizhasan51@gmail.com'><h4 style={{display: 'inline'}}><FaEnvelope/></h4></StyledExternalLink>
+          <StyledExternalLink href='https://www.linkedin.com/in/moizhasan/'><h4 style={{display: 'inline'}}><FaLinkedin/></h4></StyledExternalLink>
+          <StyledExternalLink href='https://github.com/MoizHasan'><h4 style={{display: 'inline'}}><GoMarkGithub/></h4></StyledExternalLink>
           </section>
       </div>
     </StyledNav>

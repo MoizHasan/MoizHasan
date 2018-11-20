@@ -7,8 +7,8 @@ const projects = [
   {
     title: "Random Quote Machine",
     description: "Random Quote Generator built with React and the Wiki Media API",
-    href: 'https://github.com/MoizHasan/minesweeper',
-    demo: "portfolio/randomquotegenerator",
+    href: 'https://github.com/MoizHasan/random-quote-generator',
+    demo: "portfolio/random-quote-generator",
   },
 
   {
