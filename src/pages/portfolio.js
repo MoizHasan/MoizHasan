@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout"
 import ProjectList from '../components/ProjectList'
+import Calculator from "../components/calculator/Calculator"
 
 const projects = [   
 
@@ -9,6 +10,13 @@ const projects = [
     description: "Random Quote Generator built with React and the Wiki Media API",
     href: 'https://github.com/MoizHasan/random-quote-generator',
     demo: "portfolio/random-quote-generator",
+  },
+
+  {
+    title: "Calculator",
+    description: "Calculator built using React",
+    href: "https://github.com/MoizHasan/Calculator",
+    demo: "portfolio/calculator-demo",
   },
 
   {
