@@ -13,6 +13,13 @@ const projects = [
   },
 
   {
+    title: "Pomodoro Timer", 
+    description: "Timer built with React to help you apply the Pomodoro method and be more productive!",
+    href: "https://github.com/MoizHasan/pomodoro-timer",
+    demo: "portfolio/pomodoro-timer-demo",
+  },
+
+  {
     title: "Calculator",
     description: "Calculator built using React",
     href: "https://github.com/MoizHasan/Calculator",
