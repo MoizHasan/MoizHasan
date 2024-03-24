@@ -32,16 +32,17 @@ const projects = [
   },
 
   {
+    title: "Wedding Guest List",
+    description: "Display I put together to help guests at my sister's wedding find their tables",
+    href: 'https://github.com/MoizHasan/WeddingList',
+  },
+
+  {
   	title: "Location Finder",
   	description: "Simple Location viewer that lets you look at any lat long using the google maps API",
   	href: 'https://github.com/MoizHasan/Maps-Api', 
   }, 
 
-     {
-    title: "MoizHasan.com",
-    description: "My personal website, built with GatsbyJS.",
-    href: 'https://github.com/MoizHasan/MoizHasan'
-   }
 ]
 
 

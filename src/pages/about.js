@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from './avatar.jpg'
+import avatar from './avatar.png'
 import Layout from "../components/layout"
 
 const leftPanel = {
@@ -36,18 +36,12 @@ const About = () => (
     <a href='../Hasan_Resume.pdf' target="_blank" style = {resumeLink} >Download Resume</a>
   </div>
  <div className='rightPanel' style = {rightPanel} >
-<p>I am a Full Stack Developer currently looking for my next challenge.
- I graduated from The University of St. Thomas in 2015 and worked as a Full Stack Web Developer using the LAMP stack at Promotion Management Center.
- </p>
- <p>
- Currently I've been focused on mastering ReactJS and modern JavaScript. 
- I enjoy attending local developer meetups and learning more about current technologies.
- </p>
- <p> 
- When not in front of a computer I enjoy going to concerts, playing tennis and boardgames.
- </p>
+<h4>I am a Full Stack Web Developer with over five years of industry experience based in the Twin Cities.
+  I enjoy wearing many hats and getting to work with new technologies. 
+ When not in front of a computer I enjoy going to concerts, playing pickleball and cardgames.
+ </h4>
  </div>
  </Layout>
 </div>
 );
-export default About
+export default About;
