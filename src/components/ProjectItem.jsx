@@ -21,9 +21,7 @@ const projectItem = {
   }
   `;
 
-class ProjectItem extends React.Component {
-	render() {
-		const { title, description, href, demo} = this.props;
+const ProjectItem = ({title, description, href, demo}) => {
 		let demoLink = '';
 		if (demo) {
 			demoLink = <span><span> | </span><Link style={projectItem} to={demo}>Demo</Link></span>;
@@ -37,7 +35,6 @@ class ProjectItem extends React.Component {
 				</StyledExternalLink>
 			</div>
 			);
-	}
-}
+		};
 
 export default ProjectItem;

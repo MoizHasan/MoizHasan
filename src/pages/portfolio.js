@@ -8,21 +8,21 @@ const projects = [
     title: "Random Quote Machine",
     description: "Random Quote Generator built with React and the Wiki Media API",
     href: 'https://github.com/MoizHasan/random-quote-generator',
-    demo: "portfolio/random-quote-generator",
+    demo: "random-quote-generator",
   },
 
   {
     title: "Pomodoro Timer", 
     description: "Timer built with React to help you apply the Pomodoro method and be more productive!",
     href: "https://github.com/MoizHasan/pomodoro-timer",
-    demo: "portfolio/pomodoro-timer-demo",
+    demo: "pomodoro-timer-demo",
   },
 
   {
     title: "Calculator",
     description: "Calculator built using React",
     href: "https://github.com/MoizHasan/Calculator",
-    demo: "portfolio/calculator-demo",
+    demo: "calculator-demo",
   },
 
   {

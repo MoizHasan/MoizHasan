@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import ExternalLink from '../components/ExternalLink'
+import ExternalLink from './ExternalLink'
 import { FaEnvelope } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { GoMarkGithub } from 'react-icons/go'
@@ -49,14 +49,14 @@ const Header = () => (
         <section style={{ float: 'right' }}>
         <Link
           style={LinkStyle}
-          to="about"
+          to="/about"
         >
           About
           </Link>
           
         <Link
           style={LinkStyle}
-          to="portfolio"
+          to="/portfolio"
         >
           Projects
         </Link> 
