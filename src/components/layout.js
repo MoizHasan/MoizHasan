@@ -19,21 +19,6 @@ const LinkStyle = { color: 'white',
                     margin: '0.5rem 0.75rem',
                     }
 
-const StyledLink = styled(Link)`
-  ${LinkStyle}
-
-  &:hover {
-    color: #de525a;
-  }
-  `;
-
-  const StyledExternalLink = styled(ExternalLink)`
-  ${LinkStyle}
-  &:hover {
-    color: #de525a;
-  }
-  `;
-
   const StyledNav = styled.nav`
   margin: 0 auto;
   width: 90%;
@@ -55,27 +40,30 @@ const Header = () => (
   >
     <StyledNav>
       <div style={{ margin: 0 }}>
-        <StyledLink
+        <Link
+          style={LinkStyle}
           to="/"
           >
           Moiz Hasan
-        </StyledLink>
+        </Link>
         <section style={{ float: 'right' }}>
-        <StyledLink
+        <Link
+          style={LinkStyle}
           to="about"
-          >
+        >
           About
-          </StyledLink>
+          </Link>
           
-          <StyledLink
+        <Link
+          style={LinkStyle}
           to="portfolio"
-          >
+        >
           Projects
-          </StyledLink> 
+        </Link> 
           
-          <StyledExternalLink style={{fontSize: '1rem'}} href='mailto:moizhasan51@gmail.com'><h4 style={{display: 'inline'}}><FaEnvelope/></h4></StyledExternalLink>
-          <StyledExternalLink href='https://www.linkedin.com/in/moizhasan/'><h4 style={{display: 'inline'}}><FaLinkedin/></h4></StyledExternalLink>
-          <StyledExternalLink href='https://github.com/MoizHasan'><h4 style={{display: 'inline'}}><GoMarkGithub/></h4></StyledExternalLink>
+          <Link style={{...LinkStyle, fontSize: '1rem'}} href='mailto:moizhasan51@gmail.com'><h4 style={{display: 'inline'}}><FaEnvelope/></h4></Link>
+          <ExternalLink style={LinkStyle} href='https://www.linkedin.com/in/moizhasan/'><h4 style={{display: 'inline'}}><FaLinkedin/></h4></ExternalLink>
+          <ExternalLink style={LinkStyle} href='https://github.com/MoizHasan'><h4 style={{display: 'inline'}}><GoMarkGithub/></h4></ExternalLink>
           </section>
       </div>
     </StyledNav>

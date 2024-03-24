@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from "../components/layout"
 import ProjectList from '../components/ProjectList'
-import Calculator from "../components/calculator/Calculator"
 
 const projects = [   
 
@@ -47,16 +46,13 @@ const projects = [
 
 
 
-export default class Portfolio extends React.Component {
-render() {
-
-return (
-  <Layout>
-	<div>
-	<h1>Projects</h1>
-	<ProjectList projects={projects} />
-  </div>
-  </Layout>
+const Portfolio = () => 
+  (
+    <Layout>
+	    <div>
+	      <h1>Projects</h1>
+	      <ProjectList projects={projects} />
+      </div>
+    </Layout>
 	);
-}
-}
+export default Portfolio;

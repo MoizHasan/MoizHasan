@@ -27,10 +27,7 @@ const resumeLink = {
     color: 'black',
 }
 
-export default class About extends React.Component {
-render() {
-
-return (
+const About = () => (
 <div>
 <Layout>
   <div className='leftPanel' style = {leftPanel} >
@@ -53,5 +50,4 @@ return (
  </Layout>
 </div>
 );
-}
-}
+export default About

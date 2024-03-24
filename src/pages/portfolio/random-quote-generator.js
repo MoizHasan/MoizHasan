@@ -44,7 +44,7 @@ class QuoteBox extends React.Component {
         var quote =  '';
         for (let i = 1; i < list.length-1; i++) {
           quote = list[i].substring(0, list[i].indexOf('~')-1);
-          author = list[i].substring(list[i].indexOf('\">')+2, list[i].indexOf('</a'));
+          author = list[i].substring(list[i].indexOf('">')+2, list[i].indexOf('</a'));
           quotes.push({author: author, quote: quote});
         }
         this.setState({
