@@ -19,6 +19,16 @@ const LinkStyle = { color: 'white',
                     margin: '0.5rem 0.75rem',
                     }
 
+const StyledExternalLink = styled(ExternalLink)`
+${LinkStyle}
+position: relative;
+top: 3px;
+&:hover {
+  color: #de525a;
+  }
+  `;
+                  
+
   const StyledNav = styled.nav`
   margin: 0 auto;
   width: 90%;
@@ -61,9 +71,9 @@ const Header = () => (
           Projects
         </Link> 
           
-          <Link style={{...LinkStyle, fontSize: '1rem'}} href='mailto:moizhasan51@gmail.com'><h4 style={{display: 'inline'}}><FaEnvelope/></h4></Link>
-          <ExternalLink style={LinkStyle} href='https://www.linkedin.com/in/moizhasan/'><h4 style={{display: 'inline'}}><FaLinkedin/></h4></ExternalLink>
-          <ExternalLink style={LinkStyle} href='https://github.com/MoizHasan'><h4 style={{display: 'inline'}}><GoMarkGithub/></h4></ExternalLink>
+          <Link style={{...LinkStyle, fontSize: '1rem', position: 'relative', top: '5px'}} href='mailto:moizhasan51@gmail.com'><FaEnvelope/></Link>
+          <StyledExternalLink style={LinkStyle} href='https://www.linkedin.com/in/moizhasan/'><FaLinkedin/></StyledExternalLink>
+          <StyledExternalLink style={LinkStyle} href='https://github.com/MoizHasan'><GoMarkGithub/></StyledExternalLink>
           </section>
       </div>
     </StyledNav>
