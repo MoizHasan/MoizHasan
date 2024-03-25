@@ -4,14 +4,15 @@
   "version": "1.0.0",
   "author": "Moiz Hasan",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.8.0",
-    "gatsby": "^2.0.0-rc.28",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-styled-components": "^3.0.0-rc.5",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-icons": "^3.2.2",
-    "styled-components": "^2.4.1"
+    "babel-plugin-styled-components": "^2.1.0",
+    "gatsby": "^5.13.0",
+    "gatsby-plugin-react-helmet": "^6.13.0",
+    "gatsby-plugin-styled-components": "^6.13.1",
+    "parse-url": "^9.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.0",
+    "styled-components": "^6.1.0"
   },
   "keywords": [
     "gatsby"
@@ -26,6 +27,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.15.2"
+    "prettier": "^3.0.0"
   }
 }

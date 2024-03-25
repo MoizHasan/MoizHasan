@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 const ExternalLink = (props) => (
 			<a className={props.className} href = {props.href}  target="_blank" rel="noopener noreferrer" >
@@ -7,4 +7,4 @@ const ExternalLink = (props) => (
 			</a>
 			);
 
-export default ExternalLink;
+export default ExternalLink

@@ -1,14 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import * as React from 'react'
 import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
+import ExternalLink from './externalLink'
 import styled from 'styled-components'
-import ExternalLink from './ExternalLink'
 import { FaEnvelope } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
-import { GoMarkGithub } from 'react-icons/go'
+import { FaGithub } from "react-icons/fa"
 
 import '../layouts/index.css'
+import Header from  './header'
 
 const LinkStyle = { color: 'white', 
                     textDecoration: 'none',
@@ -27,62 +27,10 @@ top: 3px;
   color: #de525a;
   }
   `;
-                  
-
-  const StyledNav = styled.nav`
-  margin: 0 auto;
-  width: 90%;
-  padding: .85rem 1.25rem;
-
-  @media (max-width: 700px) {
-    width: 95%;
-    padding: .85rem 0;
-  }
-  `;
-
-const Header = () => (
-  <div
-    style={{
-      background: '#39395a',
-      position: 'fixed',
-      width: '100%'
-    }}
-  >
-    <StyledNav>
-      <div style={{ margin: 0 }}>
-        <Link
-          style={LinkStyle}
-          to="/"
-          >
-          Moiz Hasan
-        </Link>
-        <section style={{ float: 'right' }}>
-        <Link
-          style={LinkStyle}
-          to="/about"
-        >
-          About
-          </Link>
-          
-        <Link
-          style={LinkStyle}
-          to="/portfolio"
-        >
-          Projects
-        </Link> 
-          
-          <Link style={{...LinkStyle, fontSize: '1rem', position: 'relative', top: '5px'}} href='mailto:moizhasan51@gmail.com'><FaEnvelope/></Link>
-          <StyledExternalLink style={LinkStyle} href='https://www.linkedin.com/in/moizhasan/'><FaLinkedin/></StyledExternalLink>
-          <StyledExternalLink style={LinkStyle} href='https://github.com/MoizHasan'><GoMarkGithub/></StyledExternalLink>
-          </section>
-      </div>
-    </StyledNav>
-  </div>
-)
 
 
-const TemplateWrapper = ({ children }) => (
-  <div>
+const Layout = ({ children }) => (
+  <>
     <Helmet
       title="Moiz Hasan"
       meta={[
@@ -91,6 +39,46 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
+    <header
+      style={{
+        background: '#39395a',
+        position: 'fixed',
+        width: '100%'
+      }}
+    >
+      <nav 
+      style={{  
+        margin: '0 auto',
+        width: '90%',
+        padding: '.85rem 1.25rem'
+        }}>
+          <Link
+            style={LinkStyle}
+            to="/"
+            >
+            Moiz Hasan
+          </Link>
+          <section style={{ float: 'right' }}>
+          <Link
+            style={LinkStyle}
+            to="/about"
+          >
+            About
+            </Link>
+            
+          <Link
+            style={LinkStyle}
+            to="/portfolio"
+          >
+            Projects
+          </Link> 
+            
+            <Link style={{...LinkStyle, fontSize: '1rem', position: 'relative', top: '5px'}} href='mailto:moizhasan51@gmail.com'><FaEnvelope/></Link>
+            <StyledExternalLink style={LinkStyle} href='https://www.linkedin.com/in/moizhasan/'><FaLinkedin/></StyledExternalLink>
+            <StyledExternalLink style={LinkStyle} href='https://github.com/MoizHasan'><FaGithub/></StyledExternalLink>
+            </section>
+      </nav>
+    </header>
     <div
       style={{
         margin: '0 auto',
@@ -98,13 +86,9 @@ const TemplateWrapper = ({ children }) => (
         padding: '4.5rem 1.0875rem 1.45rem',
       }}
     >
-      {children}
+      <main>{children}</main>
     </div>
-  </div>
+  </>
 )
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
-
-export default TemplateWrapper
+export default Layout

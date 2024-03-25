@@ -1,6 +1,6 @@
 import React from 'react';
 import CalculatorButton from './calculator-button';
-import styles from './calculator.module.css';
+import * as styles from './calculator.module.css';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -12,7 +12,6 @@ class Calculator extends React.Component {
   }
   
   handleDigitClick = (event) => {
-    console.log(this.state.wasSolved)
     var number = event.target.innerHTML;
     if (this.state.expression.length < 13) {
       if (this.state.expression.length > 1) {

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../../components/layout.js'
-import styles from './random-quote-generator.module.css'
+import * as styles from './random-quote-generator.module.css'
 import { FaTwitter } from 'react-icons/fa'
 /*
  * Random Quote Generation with React
@@ -49,8 +49,12 @@ class QuoteBox extends React.Component {
         }
         this.setState({
           quotes: quotes,
-        })
-        this.setQuote();
+        });
+        
+        setTimeout(() => {
+          console.log("Delayed for 1 second.");
+          this.setQuote();
+        }, 1000);
     });
     }
   

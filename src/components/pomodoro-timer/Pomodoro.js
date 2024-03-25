@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './pomodoro.module.css';
+import * as styles from './pomodoro.module.css';
 import beep from './beep.mp3';
 import { FaPlayCircle, FaPause, FaUndo, FaPlus, FaMinus } from 'react-icons/fa';
 
