@@ -1,5 +1,5 @@
 import React from 'react'
-import ExternalLink from './ExternalLink'
+import ExternalLink from './externalLink'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 

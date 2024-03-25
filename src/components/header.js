@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { Link } from 'gatsby'
 import ExternalLink from './externalLink'
 import styled from 'styled-components'
@@ -37,11 +37,11 @@ top: 3px;
 // }
 // `;
 
-const Header = () => {
+const Header = () => (
   <header
     style={{
       background: '#39395a',
-      position: 'fixed',
+      position: 'relative',
       width: '100%'
     }}
   >
@@ -78,5 +78,6 @@ const Header = () => {
       </section>
     </nav>
   </header>
-}
+)
+
 export default Header

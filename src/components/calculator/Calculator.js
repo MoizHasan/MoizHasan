@@ -146,8 +146,8 @@ evaluateExpression = (event) => {
       </div>
       <section className={styles.primaryButtons}>
         <CalculatorButton id={styles.clear} value="C" handler={this.clear} />
-        <CalculatorButton id={styles.divide} value="/" handler={this.handleModifier} />
-        <CalculatorButton id={styles.multiply} value="x" handler={this.handleModifier} />
+        <CalculatorButton value="/" handler={this.handleModifier} />
+        <CalculatorButton value="x" handler={this.handleModifier} />
         <CalculatorButton id="seven" value="7" handler={this.handleDigitClick} />
         <CalculatorButton id="eight" value="8" handler={this.handleDigitClick} />
         <CalculatorButton id="nine" value="9" handler={this.handleDigitClick} />
@@ -160,7 +160,7 @@ evaluateExpression = (event) => {
         <CalculatorButton id="two" value="2" handler={this.handleDigitClick} />
         <CalculatorButton id="three" value="3" handler={this.handleDigitClick} />
         <CalculatorButton id={styles.zero} value="0" handler={this.handleDigitClick} />
-        <CalculatorButton id={styles.decimal} value="." handler={this.handleDecimal} /> 
+        <CalculatorButton value="." handler={this.handleDecimal} /> 
         <CalculatorButton id={styles.equals} value="=" handler={this.evaluateExpression} />
       </section>
     </div>

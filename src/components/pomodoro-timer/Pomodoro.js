@@ -125,8 +125,8 @@ class Pomodoro extends React.Component {
     <div className={styles.timer}>
     <audio id="beep" src={beep}></audio>
       <div className={styles.breakToggle}>
-        <h3 className={styles.breakLabel}>Break</h3>
-        <div className={styles.break, styles.option}>
+        <h3>Break</h3>
+        <div className={styles.option}>
         <div id="break-increment" onClick = { this.incBreak }>
           <FaPlus />
         </div>
@@ -138,7 +138,7 @@ class Pomodoro extends React.Component {
         </div>
       <div className={styles.sessionToggle}>
         <h3 id="session-label">Session</h3>
-        <div className={styles.session, styles.option}>
+        <div className={styles.option}>
         <div id="session-increment" onClick = { this.incSession }>
           <FaPlus />
         </div>
