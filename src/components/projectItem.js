@@ -37,4 +37,4 @@ const ProjectItem = ({title, description, href, demo}) => {
 			);
 		};
 
-export default ProjectItem;
+export default ProjectItem

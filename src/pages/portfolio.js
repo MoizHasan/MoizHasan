@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from "../components/layout"
-import ProjectList from '../components/ProjectList'
+import ProjectList from '../components/projectList'
 
 const projects = [   
 
