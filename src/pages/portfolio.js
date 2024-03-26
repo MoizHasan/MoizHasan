@@ -26,15 +26,15 @@ const projects = [
   },
 
   {
-  	title: "Mine Sweeper",
-  	description: "Mine Sweeper clone made in JavaScript. Allows for custom grid size.",
-  	href: 'https://github.com/MoizHasan/minesweeper',
-  },
-
-  {
     title: "Wedding Guest List",
     description: "Display I put together to help guests at my sister's wedding find their tables",
     href: 'https://github.com/MoizHasan/WeddingList',
+  },
+
+  {
+  	title: "Mine Sweeper",
+  	description: "Mine Sweeper clone made in JavaScript. Allows for custom grid size.",
+  	href: 'https://github.com/MoizHasan/minesweeper',
   },
 
   {
