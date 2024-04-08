@@ -48,8 +48,9 @@ const Header = () => (
     <nav
       style={{
         margin: '0 auto',
-        width: '90%',
-        padding: '.85rem 1.25rem'
+        padding: '.85rem 1.25rem',
+        display: 'flex',
+        justifyContent: 'space-between',
       }}>
       <Link
         style={LinkStyle}
@@ -57,7 +58,7 @@ const Header = () => (
       >
         Moiz Hasan
       </Link>
-      <section style={{ float: 'right' }}>
+      <section style={{ display: 'flex' }}>
         <Link
           style={LinkStyle}
           to="/about"
